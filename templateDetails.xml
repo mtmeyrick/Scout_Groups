@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+	<name>Scout_Groups</name>
+	<version>1.0</version>
+	<creationDate>April 2013</creationDate>
+	<author>Matt Meyrick</author>
+	<authorEmail>matt@mtmeyrick.co.uk</authorEmail>
+	<copyright>Copyright (C) 2005 - 2013 Matt Meyrick. All rights reserved.</copyright>
+	<description>TPL_SCOUTS_XML_DESCRIPTION</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>less</folder>
+	</files>
+	<positions>
+		<position>debug</position>
+		<position>navbar</position>
+		<position>search</position>
+		<position>message</position>
+		<position>left</position>
+		<position>right</position>
+		<position>breadcrumbs</position>
+		<position>status</position>
+		<position>bottom-1</position>
+		<position>bottom-2</position>
+		<position>bottom-3</position>
+		<position>banner</position>
+		<position>user</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_scout_groups.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_scout_groups.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="color" label="TPL_SCOUTS_COLOR_OPTIONS">
+				<field name="templateBackgroundColor" class="" type="color" default="#949ca1" 
+					label="TPL_SCOUTS_BACKGROUND_COLOR_LABEL"
+					description="TPL_SCOUTS_BACKGROUND_COLOR_DESC" />
+
+				<field name="templateColor" class="" type="color" default="#582e91"
+					label="TPL_SCOUTS_COLOR_LABEL"
+					description="TPL_SCOUTS_COLOR_DESC" />
+
+				<field name="templateSecondColor" class="" type="color" default="#78a22f"
+					label="TPL_SCOUTS_2ND_COLOR_LABEL"
+					description="TPL_SCOUTS_2ND_COLOR_DESC" />
+					
+				<field name="templateHeaderFontColor" class="" type="color" default="#fff"
+					label="TPL_SCOUTS_HEADER_FONT_COLOR_LABEL"
+					description="TPL_SCOUTS_HEADER_FONT_COLOR_DESC" />
+					
+				<field name="templateMenuColor" class="" type="color" default="#ed7703"
+					label="TPL_SCOUTS_MENU_COLOR_LABEL"
+					description="TPL_SCOUTS_MENU_COLOR_DESC" />
+
+				<field name="templateMenuTextColor" class="" type="color" default="#fff"
+					label="TPL_SCOUTS_MENU_TEXT_COLOR_LABEL"
+					description="TPL_SCOUTS_MENU_TEXT_COLOR_DESC" />															
+			</fieldset>	
+			<fieldset name="logo" label="TPL_SCOUTS_LOGO_OPTIONS">
+				<field name="1stlogo" type="radio" class="btn-group" default="1" 
+					label="TPL_SCOUTS_1STLOGO_LABEL"
+					description="TPL_SCOUTS_1STLOGO_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+											
+				<field name="logoOption" class="" type="list" default="association"
+					label="TPL_SCOUTS_LOGO_OPTION_LABEL"
+					description="TPL_SCOUTS_LOGO_OPTION_DESC">
+					<option value="association">Association</option>
+					<option value="beaver">Beaver</option>
+					<option value="cubs">Cubs</option>
+					<option value="scouts">Scouts</option>
+					<option value="seascouts">Sea Scouts</option>
+					<option value="airscouts">Air Scouts</option>					
+					<option value="explorers">Explorers</option>
+					<option value="network">Network</option>
+					<option value="activesupport">Active Support</option>
+					<option value="">Custom</option>
+				</field>
+				
+				<field name="logoFile" class="" type="media" default=""
+					label="TPL_SCOUTS_LOGO_FILE_LABEL"
+					description="TPL_SCOUTS_LOGO_FILE_DESC" />
+				
+				<field name="2ndlogo" type="radio" class="btn-group" default="0" 
+					label="TPL_SCOUTS_2NDLOGO_LABEL"
+					description="TPL_SCOUTS_2NDLOGO_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>	
+					
+				<field name="rightlogo" class="" type="list" default=""
+					label="TPL_SCOUTS_2NDLOGO_OPTION_LABEL"
+					description="TPL_SCOUTS_2NDLOGO_OPTION_DESC">
+					<option value="association">Association</option>
+					<option value="beaver">Beaver</option>
+					<option value="cubs">Cubs</option>
+					<option value="scouts">Scouts</option>
+					<option value="seascouts">Sea Scouts</option>
+					<option value="airscouts">Air Scouts</option>
+					<option value="explorers">Explorers</option>
+					<option value="network">Network</option>
+					<option value="activesupport">Active Support</option>
+					<option value="rightcustom">Custom</option>
+				</field>
+				
+				<field name="rightcustom" class="" type="media" default=""
+					label="TPL_SCOUTS_2NDLOGO_FILE_LABEL"
+					description="TPL_SCOUTS_2NDLOGO_FILE_DESC" />
+			</fieldset>
+			<fieldset name="layout" label="TPL_SCOUTS_LAYOUT_OPTIONS">
+				<field name="fluidContainer"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="TPL_SCOUTS_FLUID_LABEL"
+					description="TPL_SCOUTS_FLUID_DESC"
+				>
+					<option value="0">TPL_SCOUTS_STATIC</option>
+					<option value="1">TPL_SCOUTS_FLUID</option>
+				</field>
+				
+				<field name="fixedHeader" type="radio" class="btn-group" default="0" 
+					label="TPL_SCOUTS_HEADER_LABEL"
+					description="TPL_SCOUTS_HEADER_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="fixedFooter" type="radio" class="btn-group" default="0" 
+					label="TPL_SCOUTS_FOOTER_LABEL"
+					description="TPL_SCOUTS_FOOTER_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>				
+			</fieldset>
+			<fieldset name="other" label="TPL_SCOUTS_OTHER_OPTIONS">	
+				<field name="contentbg" type="radio" class="btn-group" default="0" 
+					label="TPL_SCOUTS_CONTENTBG_LABEL"
+					description="TPL_SCOUTS_CONTENTBG_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="contentbgColor" class="" type="color" default="#FFFFFF"
+					label="TPL_SCOUTS_CONTENTBG_COLOR_LABEL"
+					description="TPL_SCOUTS_CONTENTBG_COLOR_DESC" />
+
+				<field name="sitetitle"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+
+				<field name="sitedescription"  type="text" default=""
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string" />
+
+				<field name="login" type="radio" class="btn-group" default="1" 
+					label="TPL_SCOUTS_LOGIN_LABEL"
+					description="TPL_SCOUTS_LOGIN_DESC" >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+				<field name="loginColor" class="" type="color" default="#006595"
+					label="TPL_SCOUTS_LOGIN_COLOR_LABEL"
+					description="TPL_SCOUTS_LOGIN_COLOR_DESC" />
+
+				<field name="footerTextColor" class="" type="color" default="#78a22f"
+					label="TPL_SCOUTS_FOOTER_TEXT_COLOR_LABEL"
+					description="TPL_SCOUTS_FOOTER_TEXT_COLOR_DESC" />
+
+				<!--<field name="googleFont"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="TPL_SCOUTS_FONT_LABEL"
+					description="TPL_SCOUTS_FONT_DESC" 
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="googleFontName" class="" type="text" default="Open+Sans"
+					label="TPL_SCOUTS_FONT_NAME_LABEL"
+					description="TPL_SCOUTS_FONT_NAME_DESC" />-->
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
